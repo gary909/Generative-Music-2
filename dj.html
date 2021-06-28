@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var dj = {
+            playsound: function() {
+                // console.log("(playsound) This is: ", this);
+                console.log("Playing ", this.sound);
+            },
+            sound: "bells"
+        };
+        var controller = {
+            timer: null,
+            start: function() {
+                //setInterval(function() {dj.playsound(); }, 1000);
+                //setInterval(dj.playsound.bind(dj), 1000);
+                this.timer = setInterval(dj.playsound.bind(dj), 1000);
+            },
+            stop: function() {
+                clearInterval(this.timer);
+            }
+        };
+        window.onload = function() {
+            //controller.start(); mute this becasue buttons will start counter
+            // dj.playsound();
+            var startButton = document.getElementById("start");
+            //startButton.onclick = controller.start;
+
+            startButton.onclick = function() {
+                //console.log("(startButton) This: ", this);
+                console.log("Start button pressed: ");
+                controller.start();
+            }
+
+            var stopButton = document.getElementById("stop");
+            //stopButton.onclick = controller.stop;
+            stopButton.onclick = function() {
+                console.log("Stop button pressed: ");
+                controller.stop();
+            }
+        };
+    </script>
+</head>
+<body>
+    <br>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+</html>
