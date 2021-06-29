@@ -29,13 +29,15 @@ window.onload = function() {
     }
 
     //*******************************************************************
-    var resetButton = document.getElementById("reset"); 
+    // var resetButton = document.getElementById("reset"); 
 
-    resetButton.onclick = function() {
-        // context.fillRect(0, 0, view.canvas.width, view.canvas.height)
-        console.log("Reset button pressed");
+    // resetButton.onclick = function() {
+    //     // context.fillRect(0, 0, view.canvas.width, view.canvas.height)
+    //     console.log("Reset button pressed");
         
-    }
+    // }
     //*******************************************************************
+
+    
 
 };

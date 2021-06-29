@@ -15,14 +15,19 @@
     <script src="View.js"></script>
     <script src="musicbox.js"></script>
     <button id="reset">Reset</button>
+    
     <!-- <script>
-        var resetButton = document.getElementById("reset"); 
-     resetButton.onclick = function() {
-         // context.fillRect(0, 0, view.canvas.width, view.canvas.height)
-         console.log("Reset button pressed");
-     }
+    var resetButton = document.getElementById("reset"); 
+
+    resetButton.onclick = function() {
+        console.log("Reset button pressed");
+
+    }
     </script> -->
+
+    <script>
+        var resetButton = document.getElementById("reset"); 
+        document.getElementById("reset").addEventListener("click", resetFunction);
+    </script>
 </body>
-
-
 </html>

@@ -71,6 +71,10 @@ function degreesToRadians(degrees) {
 	return (degrees * Math.PI) /180;
 }
 
+function resetFunction() {
+    console.log("Reset button pressed");
+    location.reload();
+}
 
 
 
