@@ -70,3 +70,8 @@ View.prototype.drawCircle = function(context, x, y, radius, alpha) {
 function degreesToRadians(degrees) {
 	return (degrees * Math.PI) /180;
 }
+
+
+
+
+

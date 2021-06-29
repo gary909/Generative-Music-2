@@ -28,35 +28,14 @@ window.onload = function() {
         setInterval(view.updateDisplay.bind(view), view.frameRate);
     }
 
+    //*******************************************************************
+    var resetButton = document.getElementById("reset"); 
 
-
-    //**************************YOU ARE HERE********************************* */
-    var resetButton = document.getElementById("reset"); // assign reset button as 'resetButton' 
-
-    //Call this function whenever the reset button is clicked:
     resetButton.onclick = function() {
         // context.fillRect(0, 0, view.canvas.width, view.canvas.height)
         console.log("Reset button pressed");
-        // sound.stop(this.audioContext);
-        //Audio.init(bufferList);
-
-        const context = canvas.getContext('2d'); // Delete?
-        var view = new View(canvas);// Delete?
-        context.clearRect(0, 0, canvas.width, canvas.height); // Delete?
-
-        // context.fillStyle = "red";
+        
     }
-
-    //*********************************************************** */
-
-
-    // var resetButton = document.getElementById("reset").addEventListener("click", resetCode); // assign reset button as 'resetButton' 
-
-    // //Call this function whenever the reset button is clicked:
-    // function resetCode() {
-    //     // context.fillRect(0, 0, view.canvas.width, view.canvas.height)
-    //     console.log("Reset button pressed");
-    //     // sound.stop(this.audioContext);
-    // }
+    //*******************************************************************
 
 };

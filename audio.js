@@ -18,3 +18,5 @@ var Audio = {
         sound.stop(this.audioContext.currentTime + 18); // remove .currentTime + 18 and sound doesn't repeat
     }
 };
+
+    
