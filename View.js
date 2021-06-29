@@ -71,9 +71,15 @@ function degreesToRadians(degrees) {
 	return (degrees * Math.PI) /180;
 }
 
+//********************RESET BUTTON***********************/
 function resetFunction() {
     console.log("Reset button pressed");
-    location.reload();
+    // location.reload();
+	var canvas = document.getElementById("canvas");
+	// var view = this;
+	var context = canvas.getContext('2d');
+	// context.fillRect(0, 0, view.canvas.width, view.canvas.height)
+	context.clearRect(0, 0, canvas.width, canvas.height); //clear html5 canvas
 }
 
 
