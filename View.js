@@ -21,11 +21,11 @@ View.prototype.handleClick = function(event) {
 	}, view.loopRate);
 };
 
-View.prototype.updateDisplay = function() {
+View.prototype.updateDisplay = function(resetFunction) {
 	var view = this;
 	var context = view.canvas.getContext("2d");
 	context.clearRect(0, 0, view.canvas.width, view.canvas.height);
-	context.fillStyle = "black";
+	context.fillStyle = "blue";
 	context.fillRect(0, 0, view.canvas.width, view.canvas.height); // set background to cover canvas area
     // context.strokeStyle = "orange";
     // context.strokeRect(canvas.width-110, canvas.height-110, 100, 100)
@@ -72,16 +72,17 @@ function degreesToRadians(degrees) {
 }
 
 //********************RESET BUTTON***********************/
-function resetFunction() {
-    console.log("Reset button pressed");
-    // location.reload();
-	var canvas = document.getElementById("canvas");
-	// var view = this;
-	var context = canvas.getContext('2d');
-	// context.fillRect(0, 0, view.canvas.width, view.canvas.height)
-	context.clearRect(0, 0, canvas.width, canvas.height); //clear html5 canvas
-	context.drawCircle(0, 0, canvas.width, canvas.height); //clear html5 canvas
-}
+// function resetFunction() {
+//     console.log("Reset button pressed");
+//     // location.reload();
+// 	// var canvas = document.getElementById("canvas");
+// 	// var view = this;
+// 	// var context = canvas.getContext('2d');
+// 	// context.fillRect(0, 0, view.canvas.width, view.canvas.height)
+// 	// context.clearRect(0, 0, canvas.width, canvas.height); //clear html5 canvas
+// 	// context.fillStyle = "black";
+// 	// context.drawCircle(0, 0, canvas.width, canvas.height); //clear html5 canvas
+// }
 
 
 

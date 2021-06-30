@@ -28,6 +28,12 @@
     <script>
         var resetButton = document.getElementById("reset"); 
         document.getElementById("reset").addEventListener("click", resetFunction);
+        
+        function resetFunction() {
+        console.log("Reset button pressed");
+        document.getElementById('canvas').width = canvas.width;
+        document.getElementById('canvas')
+    }
     </script>
 </body>
 </html>
