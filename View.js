@@ -80,6 +80,7 @@ function resetFunction() {
 	var context = canvas.getContext('2d');
 	// context.fillRect(0, 0, view.canvas.width, view.canvas.height)
 	context.clearRect(0, 0, canvas.width, canvas.height); //clear html5 canvas
+	context.drawCircle(0, 0, canvas.width, canvas.height); //clear html5 canvas
 }
 
 
