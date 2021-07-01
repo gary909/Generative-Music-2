@@ -15,6 +15,7 @@
     <script src="View.js"></script>
     <script src="musicbox.js"></script>
     <button id="reset">Reset</button>
+    <button id="stop">Stop</button>
     
     <!-- <script>
     var resetButton = document.getElementById("reset"); 
@@ -26,13 +27,17 @@
     </script> -->
 
     <script>
+
+        var stopButton = document.getElementById("stop"); 
+        document.getElementById("stop").addEventListener("click", stopFunction);
+
         var resetButton = document.getElementById("reset"); 
         document.getElementById("reset").addEventListener("click", resetFunction);
-        
+
         function resetFunction() {
         console.log("Reset button pressed");
-        document.getElementById('canvas').width = canvas.width;
-        document.getElementById('canvas')
+        // document.getElementById('canvas').width = 500;
+        
     }
     </script>
 </body>
