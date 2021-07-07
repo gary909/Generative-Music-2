@@ -30,14 +30,20 @@
 
         var stopButton = document.getElementById("stop"); 
         document.getElementById("stop").addEventListener("click", stopFunction);
-
+        var view = this;
         var resetButton = document.getElementById("reset"); 
         document.getElementById("reset").addEventListener("click", resetFunction);
 
-        function resetFunction() {
+    function resetFunction() {
         console.log("Reset button pressed");
         // document.getElementById('canvas').width = 500;
-        
+        var context = view.canvas.getContext("2d");
+        fillRect(canvas, context);
+    }
+
+    function stopFunction() {
+        console.log("Reset button pressed");
+        document.getElementById('canvas').width = 500;
     }
     </script>
 </body>
